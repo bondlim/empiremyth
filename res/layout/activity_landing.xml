@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/landing_bg"
+    tools:context="com.example.myproject.LandingActivity" >
+
+
+        <HorizontalScrollView
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            android:keepScreenOn="true"
+            tools:ignore="UselessParent"
+            android:layout_below="@+id/avatar_layout" >
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:id="@+id/landing_base_wrapper">
+			    
+			    
+			    <include layout="@layout/first_stripe_landing" />
+			    <include layout="@layout/second_stripe_landing" />
+			    <include layout="@layout/first_stripe_landing" />
+			    <include layout="@layout/second_stripe_landing" />
+			    <include layout="@layout/first_stripe_landing" />
+			    <include layout="@layout/second_stripe_landing" />
+			    <include layout="@layout/first_stripe_landing" />
+			    <include layout="@layout/second_stripe_landing" />
+			    <include layout="@layout/first_stripe_landing" />
+			    <include layout="@layout/second_stripe_landing" />
+			    
+			    
+			    
+			</LinearLayout>
+        </HorizontalScrollView>
+    
+    
+	<include layout="@layout/player_avatar" />
+
+</RelativeLayout>

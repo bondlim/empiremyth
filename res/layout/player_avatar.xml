@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/avatar_layout"
+    android:background="#cc5500" >
+    
+    <!-- Avatar, VIP, LEVEL, Name -->
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:orientation="vertical" >"
+	    
+	    <RelativeLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/avatar_wrapper">
+			<ImageView 
+			    android:id="@+id/avatar_img"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:src="@drawable/house" />
+			
+			<TextView
+			    android:id="@+id/vip_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="test"
+			    android:paddingLeft="3dp"
+			    android:layout_toRightOf="@+id/avatar_img" />
+			    
+			<TextView
+			    android:id="@+id/lvl_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="level"
+			    android:paddingLeft="3dp"
+			    android:layout_below="@+id/vip_text"
+			    android:layout_alignRight="@+id/vip_text" />
+		</RelativeLayout>
+		<TextView
+		    android:id="@+id/player_name_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Name"
+		    android:paddingLeft="3dp" />
+	</LinearLayout>
+	
+	<!-- Cash, Diamond, Energy, Menu -->
+	<LinearLayout
+	    android:id="@+id/cash_wrapper"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/add_cash"
+		    android:src="@drawable/plus" />
+		<TextView 
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:text="100,000"
+		    android:id="@+id/cash_text" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/diamond_wrapper"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/add_diamond"
+		    android:src="@drawable/plus" />
+		<TextView 
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:text="999"
+		    android:id="@+id/diamond_text" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/energy_wrapper"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" >
+		<ImageView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/add_energy"
+		    android:src="@drawable/plus" />
+		<TextView 
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:text="98 / 100"
+		    android:id="@+id/energy_text" />
+	</LinearLayout>"
+</LinearLayout>
